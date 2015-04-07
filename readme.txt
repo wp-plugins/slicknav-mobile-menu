@@ -32,7 +32,7 @@ Degrades gracefully without JavaScript.
 
 Creates ARIA compliant menu.
 
-Please note that SlickNav is the work of Josh Cope, he is not responsible for the working or support of this plugin.
+
 
 == Installation ==
 
@@ -58,6 +58,8 @@ The settings are found via the dashboard Settings > SlickNav Menu
  - Menu font size, default is 16px.
 
  - Submenu button indicator position, default is right.
+
+ Please note that SlickNav is the work of Josh Cope, he is not responsible for the working or support of this plugin.
 
 == Changelog ==
 
