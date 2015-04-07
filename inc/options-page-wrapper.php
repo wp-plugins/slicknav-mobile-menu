@@ -39,7 +39,7 @@
 										<td><input name="ng_slicknav_background" id="ng_slicknav_background" type="text" value="#4c4c4c" class="regular-text" /></td>										
 									</tr>
 									<tr>
-										<td><label for="ng_slicknav_button">Menu Background Color</label></td>
+										<td><label for="ng_slicknav_button">Menu Button Color</label></td>
 										<td><input name="ng_slicknav_button" id="ng_slicknav_button" type="text" value="#222222" class="regular-text" /></td>										
 									</tr>	
 									<tr>
