@@ -40,6 +40,7 @@ This section describes how to install the plugin:
 
 1. Upload the `slicknav-mobile-menu` folder to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
+3. Options are in Settings => SlickNav Menu
 
 == Usage ==
 
