@@ -60,6 +60,8 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
  - Submenu button indicator position, default is right.
 
+ Demo - http://themes.wpbeaches.com/genesischild/
+
  Please note that SlickNav is the work of Josh Cope, he is not responsible for the working or support of this plugin.
 
 == Changelog ==
