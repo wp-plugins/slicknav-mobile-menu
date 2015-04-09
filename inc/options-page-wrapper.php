@@ -150,10 +150,10 @@
 									'More Slick Nav Info...',
 									'wp_admin_style'
 								); ?></p><ul>
-										<li><a href="http://slicknav.com/">SlickNav Home</a></li>
-										<li><a href="https://github.com/ComputerWolf/SlickNav">SlickNav GitHub</a></li>
-										<li><a href="http://wpbeaches.com/using-slick-responsive-menus-genesis-child-theme/">WP Beaches Genesis Guide</a></li>
-										<li><a href="http://wpbeaches.com/swap-wordpress-twenty-twelve-mobile-menu-slick-navigation/">WP Beaches TwentyTwelve Guide</a></li>
+										<li><a href="http://slicknav.com/" rel="nofollow">SlickNav Home</a></li>
+										<li><a href="https://github.com/ComputerWolf/SlickNav" rel="nofollow">SlickNav GitHub</a></li>
+										<li><a href="http://wpbeaches.com/using-slick-responsive-menus-genesis-child-theme/" rel="nofollow">WP Beaches Genesis Guide</a></li>
+										<li><a href="http://wpbeaches.com/swap-wordpress-twenty-twelve-mobile-menu-slick-navigation/" rel="nofollow">WP Beaches TwentyTwelve Guide</a></li>
 										</ul>
 						</div>
 						<!-- .inside -->
