@@ -6,8 +6,8 @@ Description: Using SlickNav Responsive Mobile Menus in WordPress
 Author: Neil Gee
 Version: 1.1.0
 Author URI: http://wpbeaches.com
-License:           GPL-2.0+
-License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+License: GPL-2.0+
+License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 */
 
 
