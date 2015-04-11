@@ -5,7 +5,7 @@ Donate link: http://wpbeaches.com/
 Tags: mobile, menu, responsive, aria, accessible, graceful
 Requires at least: 4.0
 Tested up to: 4.1.1
-Stable tag: 1.0.0
+Stable tag: 1.1.0
 Plugin Name: SlickNav Mobile Menu
 Plugin URI: http://wpbeaches.com
 Description: SlickNav Mobile Menu
@@ -60,6 +60,12 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
  - Submenu button indicator position, default is right.
 
+ - Menu position, body tag is default
+
+ - Menu Label, MENU is default
+
+ - Parent links, true or false, whether a parent link is clickable to a page or just expands subselection
+
  Demo - http://themes.wpbeaches.com/genesischild/
 
  Please note that SlickNav is the work of Josh Cope, he is not responsible for the working or support of this plugin.
@@ -67,3 +73,5 @@ The settings are found via the dashboard Settings > SlickNav Menu
 == Changelog ==
 
 = 1.0.0 * Initial release.
+
+= 1.1.0 11th April 2015 - Position, Label and Parent Links options added. Placeholder text added.
