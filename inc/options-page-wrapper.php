@@ -80,6 +80,19 @@
 											<option value="false">False</option>
 											</select>
 										</td>
+									</tr>
+									<tr>
+										<td><label for="ng_slicknav_speed">Speed of Menu open/close (Higher numbers are slower)</label></td>
+										<td>	
+											<select name="ng_slicknav_speed" id="ng_slicknav_speed">
+											<option value="200">200</option>
+											<option selected="selected" value="400">400</option>
+											<option value="600">600</option>
+											<option value="800">800</option>
+											<option value="1000">1000</option>
+											<option value="2000">2000</option>
+											</select>
+										</td>
 									</tr>																				
 							</table>
 							<p><input class="button-primary" type="submit" name="ng_slicknav_menu_submit" value="Save" /></p>
@@ -152,7 +165,22 @@
 											<option value="false">False</option>
 											</select>
 										</td>
-									</tr>										
+									</tr>
+									<tr>
+										<td><label for="ng_slicknav_speed">Speed of Menu open/close (Lower numbers are faster)</label></td>
+										<td>
+											<strong><?php echo $ng_slicknav_speed; ?></strong>	
+										&nbsp;&nbsp;Switch
+											<select name="ng_slicknav_speed" id="ng_slicknav_speed">
+											<option value="200">200</option>
+											<option selected="selected" value="400">400</option>
+											<option value="600">600</option>
+											<option value="800">800</option>
+											<option value="1000">1000</option>
+											<option value="2000">2000</option>
+											</select>
+										</td>
+									</tr>											
 						</table>
 						<p><input class="button-primary" type="submit" name="ng_slicknav_menu_submit" value="Update" /></p>
 							
