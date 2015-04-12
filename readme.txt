@@ -76,8 +76,8 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
 = 1.0.0 * Initial release.
 
-= 1.1.0 11th April 2015 - Position, Label and Parent Links options added. Placeholder text added.
+= 1.1.0  - 11th April 2015 - Position, Label and Parent Links options added. Placeholder text added.
 
-= 1.1.1 12th April 2015 - Position, Label and Parent Links options added. Placeholder text added.
+= 1.1.1  - 12th April 2015 - Position, Label and Parent Links options added. Placeholder text added.
 
-= 1.1.2 12th April 2015 - Added open/close Menu speed amount.
+= 1.1.2  - 12th April 2015 - Added open/close Menu speed amount.
