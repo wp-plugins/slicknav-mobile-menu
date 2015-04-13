@@ -64,7 +64,7 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
  - Menu Label, MENU is default
 
- - Parent links, true or false, whether a parent link is clickable to a page or just expands subselection
+ - Parent links, true or false, whether a parent link that has a submenu is clickable to a page 
 
  - Open/close Menu speed option
 
