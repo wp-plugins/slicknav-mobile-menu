@@ -76,6 +76,12 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
  Please note that SlickNav is the work of Josh Cope, he is not responsible for the working or support of this plugin.
 
+== Screenshots ==
+
+1. Image of internal options
+
+2. Image of front end view example menu
+
 == Changelog ==
 
 = 1.0.0 * Initial release.
