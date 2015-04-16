@@ -51,6 +51,14 @@
 										<td><input name="ng_slicknav_icon_color" id="ng_slicknav_icon_color" type="text" value="#ffffff" class="regular-text" placeholder="#ffffff" /></td>										
 									</tr>
 									<tr>
+										<td><label for="ng_slicknav_link_color"><?php _e( 'Menu Link Color', 'slicknav-mobile-menu' ); ?></label></td>
+										<td><input name="ng_slicknav_link_color" id="ng_slicknav_link_color" type="text" value="#ffffff" class="regular-text" placeholder="#ffffff" /></td>										
+									</tr>
+									<tr>
+										<td><label for="ng_slicknav_link_hover_color"><?php _e( 'Menu Link Hover Color', 'slicknav-mobile-menu' ); ?></label></td>
+										<td><input name="ng_slicknav_link_hover_color" id="ng_slicknav_link_hover_color" type="text" value="#cccccc" class="regular-text" placeholder="#ffffff" /></td>										
+									</tr>
+									<tr>
 										<td><label for="ng_slicknav_button_position"><?php _e( 'Menu Button Position', 'slicknav-mobile-menu' ); ?></label></td>
 										<td>	
 											<select name="ng_slicknav_button_position" id="ng_slicknav_button_position">
@@ -131,13 +139,21 @@
 									<td><input name="ng_slicknav_button" id="ng_slicknav_button" type="text" value="<?php echo $ng_slicknav_button; ?>" class="regular-text" placeholder="#222222" /></td>										
 								</tr>
 								<tr>
-										<td><label for="ng_slicknav_label_color"><?php _e( 'Menu Label Color', 'slicknav-mobile-menu' ); ?></label></td>
-										<td><input name="ng_slicknav_label_color" id="ng_slicknav_label_color" type="text" value="<?php echo $ng_slicknav_label_color; ?>" class="regular-text" placeholder="#ffffff" /></td>										
+									<td><label for="ng_slicknav_label_color"><?php _e( 'Menu Label Color', 'slicknav-mobile-menu' ); ?></label></td>
+									<td><input name="ng_slicknav_label_color" id="ng_slicknav_label_color" type="text" value="<?php echo $ng_slicknav_label_color; ?>" class="regular-text" placeholder="#ffffff" /></td>										
 								</tr>
 								<tr>
-										<td><label for="ng_slicknav_icon_color"><?php _e( 'Menu Icon Color', 'slicknav-mobile-menu' ); ?></label></td>
-										<td><input name="ng_slicknav_icon_color" id="ng_slicknav_icon_color" type="text" value="<?php echo $ng_slicknav_icon_color; ?>" class="regular-text" placeholder="#ffffff" /></td>										
-									</tr>
+									<td><label for="ng_slicknav_icon_color"><?php _e( 'Menu Icon Color', 'slicknav-mobile-menu' ); ?></label></td>
+									<td><input name="ng_slicknav_icon_color" id="ng_slicknav_icon_color" type="text" value="<?php echo $ng_slicknav_icon_color; ?>" class="regular-text" placeholder="#ffffff" /></td>										
+								</tr>
+								<tr>
+									<td><label for="ng_slicknav_link_color"><?php _e( 'Menu Link Color', 'slicknav-mobile-menu' ); ?></label></td>
+									<td><input name="ng_slicknav_link_color" id="ng_slicknav_link_color" type="text" value="<?php echo $ng_slicknav_link_color; ?>" class="regular-text" placeholder="#ffffff" /></td>										
+								</tr>
+								<tr>
+									<td><label for="ng_slicknav_link_hover_color"><?php _e( 'Menu Link Hover Color', 'slicknav-mobile-menu' ); ?></label></td>
+									<td><input name="ng_slicknav_link_hover_color" id="ng_slicknav_link_hover_color" type="text" value="<?php echo $ng_slicknav_link_hover_color; ?>" class="regular-text" placeholder="#ffffff" /></td>										
+								</tr>
 								<tr>
 									<td><label for="ng_slicknav_button_position"><?php _e( 'Menu Button Position', 'slicknav-mobile-menu' ); ?></label></td>
 									<td>	

@@ -4,7 +4,7 @@ Plugin Name: SlickNav Mobile Menu
 Plugin URI: http://wpbeaches.com/using-slick-responsive-menus-genesis-child-theme/
 Description: Using SlickNav Responsive Mobile Menus in WordPress
 Author: Neil Gee
-Version: 1.1.4
+Version: 1.1.5
 Author URI: http://wpbeaches.com
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -96,7 +96,9 @@ function ng_slicknav_responsive_menucss() {
         $ng_slicknav_icon_color = $options['ng_slicknav_icon_color'];
         $ng_slicknav_button_position = $options['ng_slicknav_button_position'];
         $ng_slicknav_font = $options['ng_slicknav_font'];
-        $ng_slicknav_submenu_position = $options['ng_slicknav_submenu_position'];
+        $ng_slicknav_submenu_position = $options['ng_slicknav_submenu_position']; 
+        $ng_slicknav_link_hover_color = $options['ng_slicknav_link_hover_color'];
+        $ng_slicknav_link_color = $options['ng_slicknav_link_color'];
 
 }?>
 
@@ -129,6 +131,12 @@ function ng_slicknav_responsive_menucss() {
              }
              .slicknav_menu .slicknav_icon-bar {
                 background-color: <?php echo $ng_slicknav_icon_color; ?>;
+             }
+             .slicknav_nav a {
+                color: <?php echo $ng_slicknav_link_color; ?>;
+             }
+             .slicknav_nav a:hover {
+                background-color: <?php echo $ng_slicknav_link_hover_color; ?>;
              }
       }
         </style>
@@ -189,6 +197,9 @@ function wpslicknav_menu_options_page() {
           $ng_slicknav_label = esc_html( $_POST['ng_slicknav_label']);
           $ng_slicknav_parent_links = esc_html( $_POST['ng_slicknav_parent_links']);
           $ng_slicknav_speed = esc_html( $_POST['ng_slicknav_speed']);
+          $ng_slicknav_link_color = esc_html( $_POST['ng_slicknav_link_color']);
+          $ng_slicknav_link_hover_color = esc_html( $_POST['ng_slicknav_link_hover_color']);
+
 
           $options['ng_slicknav_menu'] = $ng_slicknav_menu;
           $options['ng_slicknav_width'] = $ng_slicknav_width;
@@ -203,6 +214,9 @@ function wpslicknav_menu_options_page() {
           $options['ng_slicknav_label'] = $ng_slicknav_label;
           $options['ng_slicknav_parent_links'] = $ng_slicknav_parent_links;
           $options['ng_slicknav_speed'] = $ng_slicknav_speed;
+          $options['ng_slicknav_link_color'] = $ng_slicknav_link_color;
+          $options['ng_slicknav_link_hover_color'] = $ng_slicknav_link_hover_color;
+
           $options['last_updated']     = time();
 
           update_option('ng_slicknavmenu', $options);
@@ -229,6 +243,9 @@ function wpslicknav_menu_options_page() {
         $ng_slicknav_label = $options['ng_slicknav_label'];
         $ng_slicknav_parent_links = $options['ng_slicknav_parent_links'];
         $ng_slicknav_speed = $options['ng_slicknav_speed'];
+        $ng_slicknav_link_color = $options['ng_slicknav_link_color'];
+        $ng_slicknav_link_hover_color = $options['ng_slicknav_link_hover_color'];
+
 
     }
 
