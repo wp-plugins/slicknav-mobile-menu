@@ -132,7 +132,7 @@ function ng_slicknav_responsive_menucss() {
              .slicknav_menu .slicknav_icon-bar {
                 background-color: <?php echo $ng_slicknav_icon_color; ?>;
              }
-             .slicknav_nav a {
+             .slicknav_nav li a {
                 color: <?php echo $ng_slicknav_link_color; ?>;
              }
              .slicknav_nav a:hover {
