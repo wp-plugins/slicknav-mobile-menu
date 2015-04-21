@@ -122,7 +122,7 @@ function ng_slicknav_responsive_menucss() {
                 background: <?php echo $ng_slicknav_background; ?>;
              }
              .slicknav_btn {
-                background-color:<?php echo $ng_slicknav_button; ?> ;
+                background-color:<?php echo $ng_slicknav_button; ?>;
                 float: <?php echo $ng_slicknav_button_position; ?>;
              }
 
@@ -137,11 +137,11 @@ function ng_slicknav_responsive_menucss() {
              }
              .slicknav_menu .slicknav_icon-bar {
                 background-color: <?php echo $ng_slicknav_icon_color; ?>;
-                box-shadow: <?php echo $ng_slicknav_icon_shadow; ?>;;
+                box-shadow: <?php echo $ng_slicknav_icon_shadow; ?>;
              }
              .slicknav_nav li a {
                 color: <?php echo $ng_slicknav_link_color; ?>;
-                text-transform: <?php echo $ng_slicknav_font_case; ?> ;
+                text-transform: <?php echo $ng_slicknav_font_case; ?>;
                 font-size: <?php echo $ng_slicknav_font; ?>px;
              }
              .slicknav_nav a:hover {

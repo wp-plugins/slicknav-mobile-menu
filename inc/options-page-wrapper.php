@@ -27,7 +27,7 @@
 
 					<div class="postbox">
 
-						<h3><span><?php _e( 'Enter your menu CSS selector for the Mobile Menu name value, for example; #menu-primary-menu', 'slicknav-mobile-menu' ); ?></span></h3>
+						<h3><span><?php _e( 'Enter your menu CSS selector for the Mobile Menu name value, for example; #primary-menu or #menu-primary-menu etc.', 'slicknav-mobile-menu' ); ?></span></h3>
 
 						<div class="inside">
 						<?php if( !isset( $ng_slicknav_menu ) || $ng_slicknav_menu == ''): ?>
