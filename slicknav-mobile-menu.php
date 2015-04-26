@@ -4,10 +4,12 @@ Plugin Name: SlickNav Mobile Menu
 Plugin URI: http://wpbeaches.com/using-slick-responsive-menus-genesis-child-theme/
 Description: Using SlickNav Responsive Mobile Menus in WordPress
 Author: Neil Gee
-Version: 1.2.1
+Version: 1.3.0
 Author URI: http://wpbeaches.com
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
+Text Domain: slicknav-mobile-menu
+Domain Path: /languages/
 */
 
 
@@ -25,6 +27,15 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.txt
 
 $plugin_url = WP_PLUGIN_URL . '/slicknav-mobile-menu';
 $options = array();
+
+
+/**
+ * Register our text domain.
+ */
+function snm_load_textdomain() {
+  load_plugin_textdomain( 'slicknav-mobile-menu', false, basename( dirname( __FILE__ ) ) . '/languages' );
+}
+add_action( 'plugins_loaded', 'snm_load_textdomain' );
 
 
 //Script-tac-ulous -> All the Scripts and Styles Registered and Enqueued
@@ -122,7 +133,7 @@ function ng_slicknav_responsive_menucss() {
                 background: <?php echo $ng_slicknav_background; ?>;
              }
              .slicknav_btn {
-                background-color:<?php echo $ng_slicknav_button; ?>;
+                background-color:<?php echo $ng_slicknav_button; ?> ;
                 float: <?php echo $ng_slicknav_button_position; ?>;
              }
 
@@ -137,11 +148,11 @@ function ng_slicknav_responsive_menucss() {
              }
              .slicknav_menu .slicknav_icon-bar {
                 background-color: <?php echo $ng_slicknav_icon_color; ?>;
-                box-shadow: <?php echo $ng_slicknav_icon_shadow; ?>;
+                box-shadow: <?php echo $ng_slicknav_icon_shadow; ?>;;
              }
              .slicknav_nav li a {
                 color: <?php echo $ng_slicknav_link_color; ?>;
-                text-transform: <?php echo $ng_slicknav_font_case; ?>;
+                text-transform: <?php echo $ng_slicknav_font_case; ?> ;
                 font-size: <?php echo $ng_slicknav_font; ?>px;
              }
              .slicknav_nav a:hover {
@@ -169,6 +180,7 @@ function ng_slicknav_menu() {
      add_options_page(
         'SlickNav Options Plugin',
         'SlickNav Menu',
+       // _e('SlickNav Menu', 'slicknav-mobile-menu'),
         'manage_options',
         'wpslicknav-menu',
         'wpslicknav_menu_options_page'
