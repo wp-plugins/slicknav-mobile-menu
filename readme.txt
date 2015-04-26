@@ -98,22 +98,42 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
 == Changelog ==
 
-= 1.0.0 * Initial release.
+= 1.0.0 =
 
-= 1.1.0	- 11th April 2015 - Position, Label and Parent Links options added. Placeholder text added.
+* Initial release.
 
-= 1.1.1	- 12th April 2015 - Position, Label and Parent Links options added. Placeholder text added.
+= 1.1.0	= 
 
-= 1.1.2	- 12th April 2015 - Added open/close Menu speed amount.
+* 11th April 2015 - Position, Label and Parent Links options added. Placeholder text added.
 
-= 1.1.3	- 13th April 2015 - BugFix, Select Option Dropdowns now retains previous selection on update.
+= 1.1.1	=
 
-= 1.1.4	- 15th April 2015 - Added color options for Menu label name and icon, redid dropdown value retentions.
+* 12th April 2015 - Position, Label and Parent Links options added. Placeholder text added.
 
-= 1.1.5	- 16th April 2015 - Added link color and background color hover on links
+= 1.1.2	=
 
-= 1.2.0	- 17th April 2015 - Added shadow on/off for label and icon, added label font size adjustment, label weight adjustment,  admin layout tweaks
+* 12th April 2015 - Added open/close Menu speed amount.
 
-= 1.2.1	- 18th April 2015 - Added color pickers for color options
+= 1.1.3	=
 
-= 1.3.0 - 26th April 2015 - Internationalized -  French translation added.
+* 13th April 2015 - BugFix, Select Option Dropdowns now retains previous selection on update.
+
+= 1.1.4	=
+
+* 15th April 2015 - Added color options for Menu label name and icon, redid dropdown value retentions.
+
+= 1.1.5	=
+
+* 16th April 2015 - Added link color and background color hover on links
+
+= 1.2.0	=
+
+* 17th April 2015 - Added shadow on/off for label and icon, added label font size adjustment, label weight adjustment,  admin layout tweaks
+
+= 1.2.1	=
+
+* 18th April 2015 - Added color pickers for color options
+
+= 1.3.0 =
+
+* 26th April 2015 - Internationalized -  French translation added.
