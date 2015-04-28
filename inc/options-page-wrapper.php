@@ -88,6 +88,10 @@
 										<td><input name="ng_slicknav_link_hover_color" id="ng_slicknav_link_hover_color" type="text" value="#ccc" class="my-color-field" placeholder="#ccc" /></td>										
 									</tr>
 									<tr>
+										<td><label for="ng_slicknav_link_hover_color_submenu"><?php esc_attr_e( 'Menu Link Hover Color, Containing SubMenus', 'slicknav-mobile-menu' ); ?></label></td>
+										<td><input name="ng_slicknav_link_hover_color_submenu" id="ng_slicknav_link_hover_color_submenu" type="text" value="#ccc" class="my-color-field" placeholder="#ccc" /></td>										
+									</tr>
+									<tr>
 										<td><label for="ng_slicknav_button_position"><?php esc_attr_e( 'Menu Button Position', 'slicknav-mobile-menu' ); ?></label></td>
 										<td>	
 											<select name="ng_slicknav_button_position" id="ng_slicknav_button_position">
@@ -139,7 +143,7 @@
 										<td><input name="ng_slicknav_position" id="ng_slicknav_position" type="text" value="body" class="regular-text"  placeholder="body"/></td>										
 									</tr>
 									<tr>
-										<td><label for="ng_slicknav_label"><?php esc_attr_e( 'Menu Label ("MENU" by default, leave blank for no label)', 'slicknav-mobile-menu' ); ?></label></td>
+										<td><label for="ng_slicknav_label"><?php esc_attr_e( 'Menu Label ("MENU" by default, leave blank for no label and just the symbol)', 'slicknav-mobile-menu' ); ?></label></td>
 										<td><input name="ng_slicknav_label" id="ng_slicknav_label" type="text" value="MENU" class="regular-text" placeholder="MENU" /></td>										
 									</tr>
 									<tr>
@@ -223,8 +227,12 @@
 								</tr>
 								<tr>
 									<td><label for="ng_slicknav_link_hover_color"><?php esc_attr_e( 'Menu Link Hover Color', 'slicknav-mobile-menu' ); ?></label></td>
-									<td><input name="ng_slicknav_link_hover_color" id="ng_slicknav_link_hover_color" type="text" value="<?php echo esc_attr( $ng_slicknav_link_hover_color); ?>" class="my-color-field" placeholder="#fff" /></td>										
+									<td><input name="ng_slicknav_link_hover_color" id="ng_slicknav_link_hover_color" type="text" value="<?php echo esc_attr( $ng_slicknav_link_hover_color); ?>" class="my-color-field" placeholder="#ccc" /></td>										
 								</tr>
+								<tr>
+										<td><label for="ng_slicknav_link_hover_color_submenu"><?php esc_attr_e( 'Menu Link Hover Color, Containing SubMenus', 'slicknav-mobile-menu' ); ?></label></td>
+										<td><input name="ng_slicknav_link_hover_color_submenu" id="ng_slicknav_link_hover_color_submenu" type="text" value="<?php echo esc_attr( $ng_slicknav_link_hover_color_submenu); ?>" class="my-color-field" placeholder="#ccc" /></td>										
+									</tr>
 								<tr>
 									<td><label for="ng_slicknav_button_position"><?php esc_attr_e( 'Menu Button Position', 'slicknav-mobile-menu' ); ?></label></td>
 									<td>	
@@ -279,7 +287,7 @@
 									<td><input name="ng_slicknav_position" id="ng_slicknav_position" type="text" value="<?php echo ( $ng_slicknav_position); ?>" class="regular-text" placeholder="<?php echo ('body'); ?>" /></td>										
 								</tr>
 								<tr>
-									<td><label for="ng_slicknav_label"><?php esc_attr_e( 'Menu Label ("MENU" by default, leave blank for no label)', 'slicknav-mobile-menu' ); ?></label></td>
+									<td><label for="ng_slicknav_label"><?php esc_attr_e( 'Menu Label ("MENU" by default, leave blank for no label and just the symbol)', 'slicknav-mobile-menu' ); ?></label></td>
 									<td><input name="ng_slicknav_label" id="ng_slicknav_label" type="text" value="<?php echo ($ng_slicknav_label); ?>" class="regular-text" placeholder="<?php echo ('MENU'); ?>"  /></td>										
 								</tr>
 								<tr>
