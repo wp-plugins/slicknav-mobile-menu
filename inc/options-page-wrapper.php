@@ -156,6 +156,15 @@
 										</td>
 									</tr>
 									<tr>
+										<td><label for="ng_slicknav_child_links"><?php esc_attr_e( 'Show Child Links on Open', 'slicknav-mobile-menu' ); ?></label></td>
+										<td>	
+											<select name="ng_slicknav_child_links" id="ng_slicknav_child_links">
+											<option value="false"><?php esc_attr_e( 'False', 'slicknav-mobile-menu' ); ?></option>
+											<option value="true"><?php esc_attr_e( 'True', 'slicknav-mobile-menu' ); ?></option>
+											</select>
+										</td>
+									</tr>
+									<tr>
 										<td><label for="ng_slicknav_speed"><?php esc_attr_e( 'Speed of Menu open/close (Higher numbers are slower)', 'slicknav-mobile-menu' ); ?></label></td>
 										<td>	
 											<select name="ng_slicknav_speed" id="ng_slicknav_speed">
@@ -300,6 +309,15 @@
 									</td>
 								</tr>
 								<tr>
+									<td><label for="ng_slicknav_child_links"><?php esc_attr_e( 'Show Child Links on Open', 'slicknav-mobile-menu' ); ?></label></td>
+									<td>	
+										<select name="ng_slicknav_child_links" id="ng_slicknav_child_links">
+										<option value="false" <?php selected($options['ng_slicknav_child_links'], 'false' ); ?>><?php esc_attr_e( 'False', 'slicknav-mobile-menu' ); ?></option>
+										<option value="true" <?php selected($options['ng_slicknav_child_links'], 'true' ); ?>><?php esc_attr_e( 'True', 'slicknav-mobile-menu' ); ?></option>
+										</select>
+									</td>
+								</tr>
+								<tr>
 									<td><label for="ng_slicknav_speed"><?php esc_attr_e( 'Speed of Menu open/close (Lower numbers are faster)', 'slicknav-mobile-menu' ); ?></label></td>
 									<td>
 										<select name="ng_slicknav_speed" id="ng_slicknav_speed">
@@ -315,6 +333,8 @@
 						</table>
 						<p><input class="button-primary" type="submit" name="ng_slicknav_menu_submit" value="<?php esc_attr_e( 'Update', 'slicknav-mobile-menu'); ?>" /></p>
 							
+					<div class="updated"><p><?php esc_attr_e( 'Settings Updated', 'wp_admin_style' ); ?></p></div>
+
 					</form>
 					<?php endif; ?>
 						</div>
