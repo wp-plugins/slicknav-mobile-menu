@@ -166,6 +166,15 @@
 									</td>
 									</tr>
 									<tr>
+										<td><label for="ng_slicknav_fixhead"><?php esc_attr_e( 'Fix Menu to Head', 'slicknav-mobile-menu' ); ?></label></td>
+										<td>
+											<label for="ng_slicknav_fixhead">	
+											<input name="ng_slicknav_fixhead" type="checkbox" id="ng_slicknav_fixhead" value="1" />
+											<span><?php esc_attr_e( 'Fix Menu to Head', 'slicknav-mobile-menu' ); ?></span>
+											</label>
+										</td>
+									</tr>
+									<tr>
 										<td><label for="ng_slicknav_speed"><?php esc_attr_e( 'Speed of Menu open/close (Higher numbers are slower)', 'slicknav-mobile-menu' ); ?></label></td>
 										<td>	
 											<select name="ng_slicknav_speed" id="ng_slicknav_speed">
@@ -316,6 +325,15 @@
 										<label for="ng_slicknav_child_links">
 											<input name="ng_slicknav_child_links" type="checkbox" id="ng_slicknav_child_links" value="1" <?php checked($options['ng_slicknav_child_links'],'1'); ?> />
 											<span><?php esc_attr_e( 'Show Child Links on Open', 'slicknav-mobile-menu' ); ?></span>
+										</label>
+									</td>
+								</tr>
+								<tr>
+									<td><label for="ng_slicknav_fixhead"><?php esc_attr_e( 'Fix Menu to Head', 'slicknav-mobile-menu' ); ?></label></td>
+									<td>
+										<label for="ng_slicknav_fixhead">	
+										<input name="ng_slicknav_fixhead" type="checkbox" id="ng_slicknav_fixhead" value="1" <?php checked($options['ng_slicknav_fixhead'],'1'); ?>/>
+										<span><?php esc_attr_e( 'Fix Menu to Head', 'slicknav-mobile-menu' ); ?></span>
 										</label>
 									</td>
 								</tr>
