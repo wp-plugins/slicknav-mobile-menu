@@ -10,6 +10,7 @@ jQuery(document).ready(function($) {
                 duration: phpVars.ng_slicknav.ng_slicknav_speed,
                 showChildren: phpVars.ng_slicknav.ng_slicknav_child_links,
                 allowParentLinks: phpVars.ng_slicknav.ng_slicknav_parent_links,
+                brand: phpVars.ng_slicknav.ng_slicknav_brand,
 
             });
 
