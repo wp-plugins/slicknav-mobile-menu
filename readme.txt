@@ -34,6 +34,10 @@ Creates ARIA compliant menu.
 
 Internationalized
 
+Search Field Option
+
+Menu Logo Option
+
 
 
 == Installation ==
