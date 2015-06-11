@@ -4,7 +4,7 @@ Plugin Name: SlickNav Mobile Menu
 Plugin URI: http://wpbeaches.com/using-slick-responsive-menus-genesis-child-theme/
 Description: Using SlickNav Responsive Mobile Menus in WordPress
 Author: Neil Gee
-Version: 1.5.0
+Version: 1.5.1
 Author URI: http://wpbeaches.com
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -43,10 +43,11 @@ function ng_slicknav_scripts_styles() {
 
   wp_register_script ( 'slickjs' , plugins_url( '/js/jquery.slicknav.min.js',  __FILE__), array( 'jquery' ), '1.0.4', false );
   wp_register_style ( 'slickcss' , plugins_url( '/css/slicknav.min.css',  __FILE__), '' , '1.0.4', 'all' );
-  wp_register_script ( 'slickinit' , plugins_url( '/js/slick-init.js',  __FILE__), array( 'slickjs' ), '1.5.0', false );
+  wp_register_script ( 'slickinit' , plugins_url( '/js/slick-init.js',  __FILE__), array( 'slickjs' ), '1.4.2', false );
 
   wp_enqueue_script( 'slickjs' );
   wp_enqueue_style( 'slickcss' );
+  wp_enqueue_style( 'dashicons' );
 
 $options = get_option('ng_slicknavmenu');
 
@@ -59,8 +60,10 @@ $options = get_option('ng_slicknavmenu');
         'ng_slicknav_child_links'       => (bool) $options['ng_slicknav_child_links'], // this is a boolean true/false
         'ng_slicknav_speed'             => (int)$options['ng_slicknav_speed'],
         'ng_slicknav_label'             => esc_html($options['ng_slicknav_label']),
-        'ng_slicknav_fixhead'           => (bool) $options['ng_slicknav_fixhead'],
+        'ng_slicknav_fixhead'           => (bool) $options['ng_slicknav_fixhead'], // this is a boolean true/false
         'ng_slicknav_brand'             => esc_html($options['ng_slicknav_brand']),
+        'ng_slicknav_search'            => (bool) $options['ng_slicknav_search'], // this is a boolean true/false
+        'ng_slicksearch'                => home_url( '/' ),
 
     ),
 );
@@ -77,7 +80,7 @@ add_action( 'wp_enqueue_scripts', 'ng_slicknav_scripts_styles' );
 function ng_media_uploader_scripts() {
     if (isset($_GET['page']) && $_GET['page'] == 'wpslicknav-menu') {
         wp_enqueue_media();
-        wp_register_script('slicknav-brand-logo', plugins_url( '/js/slicknav-brand-uploader.js',  __FILE__), array('jquery'), '1.5.0', false );
+        wp_register_script('slicknav-brand-logo', plugins_url( '/js/slicknav-brand-uploader.js',  __FILE__), array('jquery'), '1.4.3', false );
         wp_enqueue_script('slicknav-brand-logo');
     }
 
@@ -250,6 +253,7 @@ function wpslicknav_menu_options_page() {
           $ng_slicknav_icon_shadow = esc_html( $_POST['ng_slicknav_icon_shadow']);
           $ng_slicknav_label_weight = esc_html( $_POST['ng_slicknav_label_weight']);
           $ng_slicknav_brand = esc_html( $_POST['ng_slicknav_brand']);
+          $ng_slicknav_search = esc_html( isset($_POST['ng_slicknav_search']));
 
 
 
@@ -277,6 +281,7 @@ function wpslicknav_menu_options_page() {
           $options['ng_slicknav_icon_shadow'] = $ng_slicknav_icon_shadow;
           $options['ng_slicknav_label_weight'] = $ng_slicknav_label_weight;
           $options['ng_slicknav_brand'] = $ng_slicknav_brand;
+          $options['ng_slicknav_search'] = $ng_slicknav_search;
 
           $options['last_updated']     = time();
 
@@ -314,6 +319,7 @@ function wpslicknav_menu_options_page() {
         $ng_slicknav_icon_shadow = $options['ng_slicknav_icon_shadow'];
         $ng_slicknav_label_weight = $options['ng_slicknav_label_weight'];
         $ng_slicknav_brand = $options['ng_slicknav_brand'];
+        $ng_slicknav_search = $options['ng_slicknav_search'];
 
     }
 
@@ -328,3 +334,5 @@ function mw_enqueue_color_picker( $hook_suffix ) {
     wp_enqueue_style( 'wp-color-picker' );
     wp_enqueue_script( 'my-script-handle', plugins_url('/js/color-picker.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
 }
+
+

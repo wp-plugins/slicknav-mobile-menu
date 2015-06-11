@@ -5,12 +5,12 @@ Donate link: http://wpbeaches.com/
 Tags: mobile, menu, responsive, aria, accessible, graceful, submenu, multi-level
 Requires at least: 4.0
 Tested up to: 4.2
-Stable tag: 1.5.0
+Stable tag: 1.5.1
 Plugin Name: SlickNav Mobile Menu
 Plugin URI: http://wpbeaches.com
 Description: SlickNav Mobile Menu
 Author: Neil Gee
-Version: 1.5.0
+Version: 1.5.1
 Author URI: http://wpbeaches.com/
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -90,7 +90,9 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
  - Fix Menu to Head, using position fixed to body tag
 
- - Option for branding menu logo opposite menu label - smaller works better such as 40px in height and up to 140px in width.
+ - Option for branding logo opposite menu label - smaller works better such as 40px in height and up to 140px in width
+
+ - Option to add in a search field at the bottom of the menu
 
  Demo - http://wpbeaches.com
 
@@ -166,4 +168,8 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
 = 1.5.0 =
 
-* 7/6/15 - Updated POT file, Core SlickNav upgrade version to 1.0.4, option for Branding Menu Logo opposite label, using input field of media uploader
+* 7/6/15 - Updated POT file, Core SlickNav upgrade version to 1.0.4, option for Branding Logo opposite label, using input field of media uploader
+
+= 1.5.1 =
+
+* 11/6/15 - Option to add in a search field at bottom of menu
