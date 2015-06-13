@@ -106,6 +106,8 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
 2. Image of front end view example menu
 
+3. Shows menu logo position and search form enabled
+
 == Changelog ==
 
 = 1.0.0 =
