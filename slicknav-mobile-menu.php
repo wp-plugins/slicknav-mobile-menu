@@ -4,7 +4,7 @@ Plugin Name: SlickNav Mobile Menu
 Plugin URI: http://wpbeaches.com/using-slick-responsive-menus-genesis-child-theme/
 Description: Using SlickNav Responsive Mobile Menus in WordPress
 Author: Neil Gee
-Version: 1.5.1
+Version: 1.5.2
 Author URI: http://wpbeaches.com
 License: GPL-2.0+
 License URI: http://www.gnu.org/licenses/gpl-2.0.txt
@@ -64,6 +64,9 @@ $options = get_option('ng_slicknavmenu');
         'ng_slicknav_brand'             => esc_html($options['ng_slicknav_brand']),
         'ng_slicknav_search'            => (bool) $options['ng_slicknav_search'], // this is a boolean true/false
         'ng_slicksearch'                => home_url( '/' ),
+        'ng_slicknav_closedsymbol'      => esc_html($options['ng_slicknav_closedsymbol']),
+        'ng_slicknav_openedsymbol'      => esc_html($options['ng_slicknav_openedsymbol']),
+        
 
     ),
 );
@@ -254,6 +257,10 @@ function wpslicknav_menu_options_page() {
           $ng_slicknav_label_weight = esc_html( $_POST['ng_slicknav_label_weight']);
           $ng_slicknav_brand = esc_html( $_POST['ng_slicknav_brand']);
           $ng_slicknav_search = esc_html( isset($_POST['ng_slicknav_search']));
+          $ng_slicknav_openedsymbol = esc_html( $_POST['ng_slicknav_openedsymbol']);
+          $ng_slicknav_closedsymbol = esc_html( $_POST['ng_slicknav_closedsymbol']);
+
+          
 
 
 
@@ -282,6 +289,8 @@ function wpslicknav_menu_options_page() {
           $options['ng_slicknav_label_weight'] = $ng_slicknav_label_weight;
           $options['ng_slicknav_brand'] = $ng_slicknav_brand;
           $options['ng_slicknav_search'] = $ng_slicknav_search;
+          $options['ng_slicknav_closedsymbol'] = $ng_slicknav_closedsymbol;
+          $options['ng_slicknav_openedsymbol'] = $ng_slicknav_openedsymbol;
 
           $options['last_updated']     = time();
 
@@ -320,6 +329,9 @@ function wpslicknav_menu_options_page() {
         $ng_slicknav_label_weight = $options['ng_slicknav_label_weight'];
         $ng_slicknav_brand = $options['ng_slicknav_brand'];
         $ng_slicknav_search = $options['ng_slicknav_search'];
+        $ng_slicknav_openedsymbol = $options['ng_slicknav_openedsymbol'];
+        $ng_slicknav_closedsymbol = $options['ng_slicknav_closedsymbol'];
+        
 
     }
 
