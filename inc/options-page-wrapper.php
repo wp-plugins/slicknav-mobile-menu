@@ -184,7 +184,7 @@
 									</tr>
 									<tr>
 										<td><label for="ng_slicknav_brand"><?php esc_attr_e( 'Enter an URL or upload an image for a logo smaller is better here, like 40px in depth and up to 140px in width', 'slicknav-mobile-menu' ); ?></label></td>
-										<td><input name="ng_slicknav_brand" id="ng_slicknav_brand" type="text" class="regular-text" value="http://"  /></td>	
+										<td><input name="ng_slicknav_brand" id="ng_slicknav_brand" type="text" class="regular-text" value="" placeholder="http://"  /></td>	
 										<td><input id="upload_image_button" type="button" value="Upload Image" class="button-secondary" /></td>									
 									</tr>
 									<tr>
@@ -369,7 +369,7 @@
 								</tr>
 								<tr>
 									<td><label for="ng_slicknav_brand"><?php esc_attr_e( 'Enter an URL or upload an image for a logo smaller is better here, like 32px in depth', 'slicknav-mobile-menu' ); ?></label></td>
-									<td><input name="ng_slicknav_brand" id="ng_slicknav_brand" type="text" class="regular-text" value="<?php echo ($ng_slicknav_brand); ?>"  /></td>	
+									<td><input name="ng_slicknav_brand" id="ng_slicknav_brand" type="text" class="regular-text" value="<?php echo ($ng_slicknav_brand); ?>" placeholder="http://" /></td>	
 									<td><input id="upload_image_button" type="button" value="Upload Image" class="button-secondary" /></td>									
 									</tr>
 								<tr>
