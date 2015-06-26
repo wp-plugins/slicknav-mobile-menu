@@ -205,8 +205,8 @@ function ng_slicknav_menu() {
      */
 
      add_options_page(
-        __('SlickNav Options Plugin','slicknav-mobile-menu' ),
-        __('SlickNav Menu', 'slicknav-mobile-menu' ),
+        __( 'SlickNav Options Plugin','slicknav-mobile-menu' ),
+        __( 'SlickNav Menu', 'slicknav-mobile-menu' ),
         'manage_options',
         'wpslicknav-menu',
         'wpslicknav_menu_options_page'
@@ -218,7 +218,7 @@ add_action( 'admin_menu', 'ng_slicknav_menu' );
 
 function wpslicknav_menu_options_page() {
 
-    if( !current_user_can('manage_options')) {
+    if( !current_user_can( 'manage_options' )) {
 
       wp_die( "Hall and Oates 'Say No Go'" );
     }
@@ -228,40 +228,37 @@ function wpslicknav_menu_options_page() {
 
     if( isset( $_POST['ng_slicknav_form_submitted'] ) ) {
 
-        $hidden_field = esc_html($_POST['ng_slicknav_form_submitted'] );
+        $hidden_field = esc_html( $_POST['ng_slicknav_form_submitted'] );
 
         if( $hidden_field == 'Y' ) {
 
-          $ng_slicknav_menu = esc_html( $_POST['ng_slicknav_menu'] );
-          $ng_slicknav_width = esc_html( $_POST['ng_slicknav_width'] );
-          $ng_slicknav_background = esc_html( $_POST['ng_slicknav_background'] );
-          $ng_slicknav_button = esc_html( $_POST['ng_slicknav_button'] );
-          $ng_slicknav_label_color = esc_html( $_POST['ng_slicknav_label_color'] );
-          $ng_slicknav_icon_color = esc_html( $_POST['ng_slicknav_icon_color'] );
-          $ng_slicknav_button_position= esc_html( $_POST['ng_slicknav_button_position']);
-          $ng_slicknav_font= esc_html( $_POST['ng_slicknav_font']);
-          $ng_slicknav_label_size= esc_html( $_POST['ng_slicknav_label_size']);
-          $ng_slicknav_submenu_position = esc_html( $_POST['ng_slicknav_submenu_position']);
-          $ng_slicknav_position = esc_html( $_POST['ng_slicknav_position']);
-          $ng_slicknav_label = esc_html( $_POST['ng_slicknav_label']);
-          $ng_slicknav_parent_links = esc_html( isset($_POST['ng_slicknav_parent_links']));
-          $ng_slicknav_child_links = esc_html( isset($_POST['ng_slicknav_child_links']));
-          $ng_slicknav_fixhead = esc_html( isset($_POST['ng_slicknav_fixhead']));
-          $ng_slicknav_speed = esc_html( $_POST['ng_slicknav_speed']);
-          $ng_slicknav_link_color = esc_html( $_POST['ng_slicknav_link_color']);
-          $ng_slicknav_link_hover_color = esc_html( $_POST['ng_slicknav_link_hover_color']);
-          $ng_slicknav_link_hover_color_submenu = esc_html( $_POST['ng_slicknav_link_hover_color_submenu']);
-          $ng_slicknav_font_case = esc_html( $_POST['ng_slicknav_font_case']);
-          $ng_slicknav_label_shadow = esc_html( $_POST['ng_slicknav_label_shadow']);
-          $ng_slicknav_icon_shadow = esc_html( $_POST['ng_slicknav_icon_shadow']);
-          $ng_slicknav_label_weight = esc_html( $_POST['ng_slicknav_label_weight']);
-          $ng_slicknav_brand = esc_html( $_POST['ng_slicknav_brand']);
-          $ng_slicknav_search = esc_html( isset($_POST['ng_slicknav_search']));
-          $ng_slicknav_openedsymbol = esc_html( $_POST['ng_slicknav_openedsymbol']);
-          $ng_slicknav_closedsymbol = esc_html( $_POST['ng_slicknav_closedsymbol']);
-
-          
-
+          $ng_slicknav_menu                     = esc_html( $_POST['ng_slicknav_menu'] );
+          $ng_slicknav_width                    = esc_html( $_POST['ng_slicknav_width'] );
+          $ng_slicknav_background               = esc_html( $_POST['ng_slicknav_background'] );
+          $ng_slicknav_button                   = esc_html( $_POST['ng_slicknav_button'] );
+          $ng_slicknav_label_color              = esc_html( $_POST['ng_slicknav_label_color'] );
+          $ng_slicknav_icon_color               = esc_html( $_POST['ng_slicknav_icon_color'] );
+          $ng_slicknav_button_position          = esc_html( $_POST['ng_slicknav_button_position'] );
+          $ng_slicknav_font                     = esc_html( $_POST['ng_slicknav_font'] );
+          $ng_slicknav_label_size               = esc_html( $_POST['ng_slicknav_label_size']);
+          $ng_slicknav_submenu_position         = esc_html( $_POST['ng_slicknav_submenu_position'] );
+          $ng_slicknav_position                 = esc_html( $_POST['ng_slicknav_position'] );
+          $ng_slicknav_label                    = esc_html( $_POST['ng_slicknav_label'] );
+          $ng_slicknav_parent_links             = esc_html( isset($_POST['ng_slicknav_parent_links']) );
+          $ng_slicknav_child_links              = esc_html( isset($_POST['ng_slicknav_child_links']) );
+          $ng_slicknav_fixhead                  = esc_html( isset($_POST['ng_slicknav_fixhead']) );
+          $ng_slicknav_speed                    = esc_html( $_POST['ng_slicknav_speed'] );
+          $ng_slicknav_link_color               = esc_html( $_POST['ng_slicknav_link_color'] );
+          $ng_slicknav_link_hover_color         = esc_html( $_POST['ng_slicknav_link_hover_color'] );
+          $ng_slicknav_link_hover_color_submenu = esc_html( $_POST['ng_slicknav_link_hover_color_submenu'] );
+          $ng_slicknav_font_case                = esc_html( $_POST['ng_slicknav_font_case'] );
+          $ng_slicknav_label_shadow             = esc_html( $_POST['ng_slicknav_label_shadow'] );
+          $ng_slicknav_icon_shadow              = esc_html( $_POST['ng_slicknav_icon_shadow'] );
+          $ng_slicknav_label_weight             = esc_html( $_POST['ng_slicknav_label_weight'] );
+          $ng_slicknav_brand                    = esc_html( $_POST['ng_slicknav_brand'] );
+          $ng_slicknav_search                   = esc_html( isset($_POST['ng_slicknav_search']) );
+          $ng_slicknav_openedsymbol             = esc_html( $_POST['ng_slicknav_openedsymbol'] );
+          $ng_slicknav_closedsymbol             = esc_html( $_POST['ng_slicknav_closedsymbol'] );
 
 
           $options['ng_slicknav_menu'] = $ng_slicknav_menu;
@@ -344,7 +341,7 @@ add_action( 'admin_enqueue_scripts', 'mw_enqueue_color_picker' );
 function mw_enqueue_color_picker( $hook_suffix ) {
     // first check that $hook_suffix is appropriate for your admin page
     wp_enqueue_style( 'wp-color-picker' );
-    wp_enqueue_script( 'my-script-handle', plugins_url('/js/color-picker.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
+    wp_enqueue_script( 'my-script-handle', plugins_url( '/js/color-picker.js', __FILE__ ), array( 'wp-color-picker' ), false, true );
 }
 
 
