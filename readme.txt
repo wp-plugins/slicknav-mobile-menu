@@ -188,4 +188,4 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
 = 1.5.4 = 
 
-* 28/6/15 - Select menu from dropdown of available menus instead of text inpit field - original menu still has to be already output on the page
+* 28/6/15 - Select menu from dropdown of available menus instead of text input field - original menu still has to be already output on the page
