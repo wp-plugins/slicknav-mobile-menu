@@ -196,4 +196,4 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
 = 1.5.6 =
 
-* 25/7/15 - Color option for Search Icon background, logo link to home page, logo alt text field
+* 25/7/15 - Color option for Search Icon background, logo link to home page, logo alt text field - Set Menu selection back to manual input
