@@ -54,6 +54,10 @@
 										<td><input name="ng_slicknav_button" id="ng_slicknav_button" type="text" value="#222222" class="my-color-field" placeholder="#222222" /></td>										
 									</tr>
 									<tr>
+										<td><label for="ng_slicknav_button_expand"><?php esc_attr_e( 'Menu Button Color Expanded', 'slicknav-mobile-menu' ); ?></label></td>
+										<td><input name="ng_slicknav_button_expand" id="ng_slicknav_button_expand" type="text" value="#222222" class="my-color-field" placeholder="#222222" /></td>										
+									</tr>
+									<tr>
 										<td><label for="ng_slicknav_label_color"><?php esc_attr_e( 'Menu Label Color', 'slicknav-mobile-menu' ); ?></label></td>
 										<td><input name="ng_slicknav_label_color" id="ng_slicknav_label_color" type="text" value="#fff" class="my-color-field" placeholder="#fff" /></td>										
 									</tr>
@@ -243,6 +247,10 @@
 								<tr>
 									<td><label for="ng_slicknav_button"><?php esc_attr_e( 'Menu Button Color', 'slicknav-mobile-menu' ); ?></label></td>
 									<td><input name="ng_slicknav_button" id="ng_slicknav_button" type="text" value="<?php echo ( $ng_slicknav_button); ?>" class="my-color-field" placeholder="#222" /></td>										
+								</tr>
+								<tr>
+									<td><label for="ng_slicknav_button_expand"><?php esc_attr_e( 'Menu Button Color Expanded', 'slicknav-mobile-menu' ); ?></label></td>
+									<td><input name="ng_slicknav_button_expand" id="ng_slicknav_button_expand" type="text" value="<?php echo ( $ng_slicknav_button_expand); ?>" class="my-color-field" placeholder="#222222" /></td>										
 								</tr>
 								<tr>
 									<td><label for="ng_slicknav_label_color"><?php esc_attr_e( 'Menu Label Color', 'slicknav-mobile-menu' ); ?></label></td>
