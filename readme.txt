@@ -32,6 +32,10 @@ Degrades gracefully without JavaScript.
 
 Creates ARIA compliant menu.
 
+Option to add a search field.
+
+Option to add a logo.
+
 Internationalized
 
 
