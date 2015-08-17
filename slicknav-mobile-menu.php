@@ -1,6 +1,4 @@
-<?php     
-
-namespace ng_slicknav;
+<?php     namespace ng_slicknav;
 
 /*
 Plugin Name: SlickNav Mobile Menu
