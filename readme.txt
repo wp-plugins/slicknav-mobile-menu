@@ -212,5 +212,5 @@ The settings are found via the dashboard Settings > SlickNav Menu
 
 = 1.6.1 =
 
-* 10/9/15 Menu Button Position - if set to left, brand logo (if used) will then appear to the right, code error fix ups, added a form nonce for security
+* 10/9/15 Menu Button Position - if set to left, brand logo (if used) will then appear to the right, code error fix ups, added a form nonce for security -> props Ov3rfly
 
