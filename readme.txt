@@ -36,7 +36,9 @@ Option to add a search field.
 
 Option to add a logo.
 
-Internationalized
+Internationalized.
+
+Advanced Filter for values.
 
 
 
@@ -103,6 +105,8 @@ The settings are found via the dashboard Settings > SlickNav Menu
  - Search icon background color
 
  - Options to change the opening and closing symbols
+
+ - Advanced filter to adjust Slicknav values
 
  Demo - http://wpbeaches.com (resize browser window to below 600px)
 
